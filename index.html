@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Fróis | Desenvolvedor de Software</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="canvas-particulas"></canvas>
+
+    <div class="wrapper-site">
+        
+        <header class="cabecalho-navegacao">
+            <div class="conteiner-navegacao">
+                
+                <a href="#" class="logo-marca efeito-nome">
+                    <span class="letra">C</span><span class="letra">a</span><span class="letra">i</span><span class="letra">o</span>
+                    <span class="espaco"></span>
+                    <span class="letra">F</span><span class="letra">r</span><span class="letra">ó</span><span class="letra">i</span><span class="letra">s</span>
+                </a>
+
+                <nav class="navegacao-desktop">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+
+                <div class="acoes-navegacao">
+                    <button id="botao-tema" type="button" aria-label="Alternar tema">
+                        <i id="icone-tema-escuro" class="fa-solid fa-moon"></i>
+                        <i id="icone-tema-claro" class="fa-solid fa-sun oculto"></i>
+                    </button>
+
+                    <button id="botao-menu-mobile" type="button" aria-label="Abrir menu">
+                        <i id="icone-menu" class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="menu-mobile" class="menu-mobile oculto">
+                <a href="#sobre" class="link-mobile">Sobre</a>
+                <a href="#habilidades" class="link-mobile">Habilidades</a>
+                <a href="#projetos" class="link-mobile">Projetos</a>
+                <a href="#contato" class="link-mobile">Contato</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="secao-hero">
+             <div class="grade-hero">
+                <div class="bloco-foto-perfil">
+                    <div class="moldura-foto">
+                        <img src="1788561097102.jpg" alt="Caio Fróis" class="foto-perfil">
+                    </div>
+                </div>
+              <div class="grade-perfil"> 
+                <h1 class="efeito-nome titulo-hero">
+                    <span class="letra">C</span><span class="letra">a</span><span class="letra">i</span><span class="letra">o</span>
+                    <span class="espaco-largo"></span>
+                    <span class="letra">F</span><span class="letra">r</span><span class="letra">ó</span><span class="letra">i</span><span class="letra">s</span>
+                </h1>
+
+                <div class="conteiner-maquina-escrever">
+                    <span id="texto-maquina-escrever"></span>
+                    <span class="cursor-maquina"></span>
+                </div>
+
+                <p class="subtitulo-hero">
+                    Desenvolvedor de software focado em criação de sistemas web, APIs eficientes e interfaces funcionais de alta performance.
+                </p>
+
+                <div class="acoes-hero">
+                    <a href="#projetos" class="botao botao-primario">
+                        Ver Projetos
+                    </a>
+                    <a href="https://github.com/caiofroisrff" target="_blank" rel="noopener noreferrer" class="botao botao-secundario">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+              
+              </div>
+             </div>
+            </section>
+
+            <section id="sobre" class="secao">
+                <div class="conteiner-secao">
+                    <div class="revelar cabecalho-secao">
+                        <h2>Sobre Mim</h2>
+                        <div class="divisor"></div>
+                    </div>
+
+                    <div class="revelar cartao-vidro cartao-texto">
+                        <p>
+                            Olá! Sou o <strong>Caio Fróis</strong>, desenvolvedor de software especializado em transformar requisitos complexos em sistemas escaláveis e fáceis de manter.
+                        </p>
+                        <p>
+                            Minha abordagem é pragmática e focada no resultado. Escrevo código limpo, utilizo as melhores práticas de arquitetura de software e prezo por interfaces que proporcionam a melhor experiência ao utilizador final.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="secao">
+                <div class="conteiner-secao">
+                    <div class="revelar cabecalho-secao">
+                        <h2>Habilidades Técnicas</h2>
+                        <div class="divisor"></div>
+                    </div>
+
+                    <div class="revelar cartao-vidro grade-habilidades">
+                        
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-solid fa-database icone-mysql"></i> MySQL</span>
+                                <span class="porcentagem-habilidade">85%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-brands fa-git-alt icone-git"></i> Git</span>
+                                <span class="porcentagem-habilidade">90%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-brands fa-github icone-github"></i> GitHub</span>
+                                <span class="porcentagem-habilidade">90%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-brands fa-html5 icone-html"></i> HTML</span>
+                                <span class="porcentagem-habilidade">95%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-brands fa-css3-alt icone-css"></i> CSS</span>
+                                <span class="porcentagem-habilidade">90%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-brands fa-js icone-js"></i> JavaScript</span>
+                                <span class="porcentagem-habilidade">85%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-habilidade largura-total">
+                            <div class="info-habilidade">
+                                <span class="nome-habilidade"><i class="fa-solid fa-c icone-csharp"></i> C#</span>
+                                <span class="porcentagem-habilidade">80%</span>
+                            </div>
+                            <div class="trilha-progresso">
+                                <div class="barra-progresso" data-width="80"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="secao">
+                <div class="conteiner-secao">
+                    <div class="revelar cabecalho-secao">
+                        <h2>Projetos em Destaque</h2>
+                        <div class="divisor"></div>
+                    </div>
+
+                    <div class="grade-projetos">
+                        
+                        <div class="revelar cartao-vidro cartao-projeto">
+                            <div class="conteudo-projeto">
+                                <h3>Gilded Vault</h3>
+                                <p>Landing page moderna e elegante desenvolvida com HTML e CSS puro, focada em design refinado e responsividade.</p>
+                                <div class="etiquetas-tecnologia">
+                                    <span class="etiqueta">HTML</span>
+                                    <span class="etiqueta">CSS</span>
+                                </div>
+                            </div>
+                            <div class="acoes-projeto">
+                                <a href="https://caiofroisrff.github.io/site_lx_displayflex/" target="_blank" rel="noopener noreferrer" class="botao botao-cartao-primario">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="revelar cartao-vidro cartao-projeto">
+                            <div class="conteudo-projeto">
+                                <h3>Louie Smith</h3>
+                                <p>Interface visual estilizada construída utilizando técnicas avançadas de HTML e CSS para estruturação de layouts modernos.</p>
+                                <div class="etiquetas-tecnologia">
+                                    <span class="etiqueta">HTML</span>
+                                    <span class="etiqueta">CSS</span>
+                                </div>
+                            </div>
+                            <div class="acoes-projeto">
+                                <a href="https://caiofroisrff.github.io/display-flex/" target="_blank" rel="noopener noreferrer" class="botao botao-cartao-primario">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="revelar cartao-vidro cartao-projeto">
+                            <div class="conteudo-projeto">
+                                <h3>Rooftop</h3>
+                                <p>Replicação de site estruturado com foco em responsividade e organização visual utilizando HTML e CSS.</p>
+                                <div class="etiquetas-tecnologia">
+                                    <span class="etiqueta">HTML</span>
+                                    <span class="etiqueta">CSS</span>
+                                </div>
+                            </div>
+                            <div class="acoes-projeto">
+                                <a href="https://caiofroisrff.github.io/C-pia-de-Site/index.html" target="_blank" rel="noopener noreferrer" class="botao botao-cartao-primario">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="secao">
+                <div class="conteiner-secao-pequeno">
+                    <div class="revelar cabecalho-secao alinhar-centro">
+                        <h2>Vamos Conversar</h2>
+                        <div class="divisor centro"></div>
+                    </div>
+
+                    <div class="revelar">
+                        <form id="formulario-contato" class="cartao-vidro formulario-contato">
+                            <div class="linha-formulario">
+                                <div class="grupo-formulario">
+                                    <label for="campo-nome">Nome</label>
+                                    <input type="text" id="campo-nome" required placeholder="Seu nome">
+                                </div>
+
+                                <div class="grupo-formulario">
+                                    <label for="campo-telefone">Telefone (Whatsapp)</label>
+                                    <input type="tel" id="campo-telefone" required placeholder="(11) 99999-9999" maxlength="15">
+                                </div>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="campo-email">E-mail</label>
+                                <input type="email" id="campo-email" required placeholder="email@exemplo.com">
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="campo-mensagem">Mensagem</label>
+                                <textarea id="campo-mensagem" required rows="4" placeholder="Como posso ajudar no seu projeto?"></textarea>
+                            </div>
+
+                            <button type="submit" class="botao botao-enviar">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <div class="conteiner-rodape">
+                <p>&copy; <span id="ano-atual"></span> Caio Fróis.</p>
+                <div class="links-sociais">
+                    <a href="https://github.com/caiofroisrff" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/caio-fr%C3%B3is-478401386/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="fundo-modal" class="fundo-modal oculto">
+        <div id="conteiner-modal" class="cartao-modal">
+            <button type="button" id="botao-fechar-modal" class="botao-fechar-modal" aria-label="Fechar modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="corpo-modal"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
